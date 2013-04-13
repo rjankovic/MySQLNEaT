@@ -31,14 +31,14 @@ How to use it
 
 or achieve the same by this:
 
-<code>
+<code><pre>
 Dictionary<string, object> values = new Dictionary<string, object>{
     {"name", "Foo"},
     {"email", "Bar"},
     {"salary", 1234}
 };
 driver.Query("INSERT INTO", dbe.Table("users"), dbe.InsVals(values);
-</code>
+</pre></code>
 
 or
 
@@ -47,9 +47,11 @@ or
 or
 
 <code>
+<pre>
 DataTable table = driver.FetchAll("SELECT", dbe.Col("name"), 
                                     "FROM", dbe.Table("users"), 
                                     "WHERE", dbe.Col("salary"), ">", 5000);
+</pre>
 </code>
 
 For more options please take a look at Interfaces.cs
