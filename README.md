@@ -65,8 +65,19 @@ Why use these query parts
   of an argument you pass to the driver - look into DbDeployable.cs; 
   if you want an specific query, you can still use plain string and optimize ahead. 
 
-
 Problems?
 =========
 
 In case of any troubles or ideas for the project, feel free to contact me at jankovic.rj@gmail.com
+
+A mere beginning
+================
+
+Many imporovements and extensions can be made, such as
+
+- batch queries
+- transaction support
+- MS SQL Server support
+- whatever sensible you come up with
+
+So please let me know if any of these would help you.
