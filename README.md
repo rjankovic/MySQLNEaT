@@ -17,15 +17,15 @@ source codes. (To run those you will first have to download Connector/NET mentio
 How to use it
 =============
 
-1. create a database driver and let it connect to the database:
+Create a database driver and let it connect to the database:
 
 <code>DBDriverMySql driver = new DBDriverMySql(connectionString);</code>
 
-2. create a factory for query parts:
+Create a factory for query parts:
 
 <code>DbDeployableMySql dbe = new DbDeployableMySql();</code>
 
-3. now you can do something like this:
+Now you can do something like this:
 
 <code>driver.Query("INSERT INTO `users` (`name`, `email`, `salary`) VALUES('Foo' 'Bar', 1234)");</code>
 
