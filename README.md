@@ -19,34 +19,38 @@ How to use it
 
 1. create a database driver and let it connect to the database:
 
-DBDriverMySql driver = new DBDriverMySql(connectionString);
+<code>DBDriverMySql driver = new DBDriverMySql(connectionString);</code>
 
 2. create a factory for query parts:
 
-DbDeployableMySql dbe = new DbDeployableMySql();
+<code>DbDeployableMySql dbe = new DbDeployableMySql();</code>
 
 3. now you can do something like this:
 
-driver.Query("INSERT INTO `users` (`name`, `email`, `salary`) VALUES('Foo' 'Bar', 1234)");
+<code>driver.Query("INSERT INTO `users` (`name`, `email`, `salary`) VALUES('Foo' 'Bar', 1234)");</code>
 
 or achieve the same by this:
 
+<code>
 Dictionary<string, object> values = new Dictionary<string, object>{
     {"name", "Foo"},
     {"email", "Bar"},
     {"salary", 1234}
 };
 driver.Query("INSERT INTO", dbe.Table("users"), dbe.InsVals(values);
+</code>
 
 or
 
-var x = driver.FetchSingle("SELECT COUNT(*) FROM ", dbe.Table("users"));
+<code>var x = driver.FetchSingle("SELECT COUNT(*) FROM ", dbe.Table("users"));</code>
 
 or
 
+<code>
 DataTable table = driver.FetchAll("SELECT", dbe.Col("name"), 
                                     "FROM", dbe.Table("users"), 
                                     "WHERE", dbe.Col("salary"), ">", 5000);
+</code>
 
 For more options please take a look at Interfaces.cs
 
