@@ -40,11 +40,11 @@ Dictionary<string, object> values = new Dictionary<string, object>{
 driver.Query("INSERT INTO", dbe.Table("users"), dbe.InsVals(values);
 </pre>
 
-or
+or try this
 
 <code>var x = driver.FetchSingle("SELECT COUNT(*) FROM ", dbe.Table("users"));</code>
 
-or
+or this
 
 <pre>
 DataTable table = driver.FetchAll("SELECT", dbe.Col("name"), 
