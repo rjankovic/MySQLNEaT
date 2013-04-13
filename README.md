@@ -48,6 +48,7 @@ DataTable table = driver.FetchAll("SELECT", dbe.Col("name"),
                                     "FROM", dbe.Table("users"), 
                                     "WHERE", dbe.Col("salary"), ">", 5000);
 
+For more options please take a look at Interfaces.cs
 
 Why use these query parts
 =========================
