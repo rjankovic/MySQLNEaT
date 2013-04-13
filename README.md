@@ -1,7 +1,7 @@
 MySQLNEaT
 =========
 
-What is it
+What it is
 ==========
 
 A database layer for MySQL based on MySQL Connector/Net (http://dev.mysql.com/doc/refman/5.6/en/connector-net.html), 
