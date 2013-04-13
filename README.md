@@ -64,4 +64,4 @@ Why use these query parts
 Problems?
 =========
 
-In case of any troubles or ideas for the project, feel free to contact me at jankovic@rj.gmail.com
+In case of any troubles or ideas for the project, feel free to contact me at jankovic.rj@gmail.com
