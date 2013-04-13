@@ -61,7 +61,7 @@ Why use these query parts
   if you want an specific query, you can still use plain string and optimize ahead. 
 
 
-Problems ?
-==========
+Problems?
+=========
 
 In case of any troubles or ideas for the project, feel free to contact me at jankovic@rj.gmail.com
